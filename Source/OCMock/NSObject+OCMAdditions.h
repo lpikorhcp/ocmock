@@ -18,7 +18,7 @@
 
 @interface NSObject(OCMAdditions)
 
-+ (void (*)(void))instanceMethodForwarderForSelector:(SEL)aSelector;
++ (void *)instanceMethodForwarderForSelector:(SEL)aSelector;
 + (void)enumerateMethodsInClass:(Class)aClass usingBlock:(void (^)(Class cls, SEL sel))aBlock;
 
 @end
