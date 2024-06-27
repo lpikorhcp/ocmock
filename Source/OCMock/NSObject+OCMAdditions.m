@@ -21,7 +21,7 @@
 
 @implementation NSObject(OCMAdditions)
 
-+ (IMP)instanceMethodForwarderForSelector:(SEL)aSelector
++ (void (*)(void))instanceMethodForwarderForSelector:(SEL)aSelector
 {
 #ifndef __arm64__
     static NSMutableDictionary *_OCMReturnTypeCache;
